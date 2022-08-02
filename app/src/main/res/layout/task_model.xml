@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:id="@+id/idLinearColorStuff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/idColorTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/descriptionId"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Descrição" />
+
+            <TextView
+                android:id="@+id/idTaskListName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task List Name" />
+
+            <TextView
+                android:id="@+id/idDeadLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deadline" />
+
+            <TextView
+                android:id="@+id/idConclusionTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Conclusion" />
+
+            <TextView
+                android:id="@+id/idStateTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="State" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageButton
+                android:id="@+id/idSetConclusionTaskButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+            <ImageButton
+                android:id="@+id/idEditListTaskButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            <ImageButton
+                android:id="@+id/idDeleteTaskButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
